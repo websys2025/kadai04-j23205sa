@@ -22,13 +22,13 @@
 
             // 商品用のクラス定義
             class Item {
-                static number = 1;
+                static number = 0;
                 constructor(name, price, stock) {
+                    Item.number++;
                     this.id = Item.number;
                     this.name = name;
                     this.price = price;
                     this.stock = stock;
-                    Item.number++;
                 }
 
                 // 商品一覧の表示関数
